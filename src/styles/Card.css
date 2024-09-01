@@ -1,0 +1,44 @@
+button {
+  height: 350px;
+  width: 225px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+button.loading {
+  opacity: 40%;
+  cursor: default;
+}
+
+button img {
+  height: 350px;
+  width: 225px;
+  border: 2px solid #000;
+}
+
+@media (hover: hover) {
+  button > div {
+    --transition-delay: 0.1s;
+    --transition-duration: 0.24s;
+    background: url("/card-bg.jpg");
+    background-size: cover;
+    transform: rotateY(180deg);
+    transition: transform var(--transition-duration) ease-in-out var(--transition-delay);
+  }
+
+  button img {
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: transform var(--transition-duration) ease-in-out var(--transition-delay),
+      opacity var(--transition-duration) ease-in-out var(--transition-delay);
+  }
+
+  button:hover div,
+  button:hover img {
+    opacity: 100%;
+    transform: scale(1.1) rotateX(0deg);
+  }
+}

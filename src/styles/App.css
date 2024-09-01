@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico:400);
+
+body {
+  background-color: #f7eed3;
+  font-family: "Pacifico", cursive, sans-serif, system-ui;
+  text-align: center;
+  padding: 2rem;
+}
+
+#root {
+  display: grid;
+  place-content: center;
+  row-gap: 2rem;
+}
+
+h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h1 > span {
+  display: block;
+  font-size: smaller;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
