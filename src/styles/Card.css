@@ -23,7 +23,7 @@ button img {
   button > div {
     --transition-delay: 0.1s;
     --transition-duration: 0.24s;
-    background: url("/card-bg.jpg");
+    background: url("/card-bg.webp");
     background-size: cover;
     transform: rotateY(180deg);
     transition: transform var(--transition-duration) ease-in-out var(--transition-delay);
